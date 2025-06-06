@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BISINDO Translator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>BISINDO Translator</h1>
+    <video id="video" autoplay muted></video>
+    <div id="output">Mendeteksi...</div>
+
+    <button id="bookmarkBtn">🔖 Simpan</button>
+    <select id="lang">
+      <option value="id-su">Indonesia ➜ Sunda</option>
+      <option value="su-id">Sunda ➜ Indonesia</option>
+    </select>
+    <input type="text" id="translateInput" placeholder="Masukkan teks..." />
+    <button id="translateBtn">Terjemahkan</button>
+    <div id="translateOutput">Hasil Translate</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+  <script src="script.js"></script>
+</body>
+</html>
